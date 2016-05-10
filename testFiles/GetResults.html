@@ -1,0 +1,1464 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <script nonce='58bf3382611916b12f9ace39de70bb456049711f8d5ccea00ef99d10130ad621c6bb8e8bf4d5d3ae650ac9c274e6128e348ca8cc19342c373aa116eb48d1a7ef' type='text/javascript'>window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ba86f45fc4","applicationID":"9556514","applicationTime":7.60211,"transactionName":"M1BXZxFZVkQFURBdVwoafVITURdwIWZLGw==","queueTime":0,"ttGuid":"140574d39744a00","agentToken":null}; window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
+  <title>npm</title>
+
+  
+  
+  <meta http-equiv="cleartype" content="on" />
+  
+  <meta name="apple-mobile-web-app-capable" content="no">
+  
+    <meta name="description" content="npm is the package manager for javascript">
+  
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+  
+  <meta name="x-npm:ga:id" content="UA-47041310-1">
+  <meta name="x-npm:ga:dimensions" content="{&quot;aboveChrome&quot;:&quot;dimension1&quot;,&quot;belowHeader&quot;:&quot;dimension3&quot;,&quot;packagePage&quot;:&quot;dimension2&quot;}">
+  
+  <link rel="canonical" href="https://www.npmjs.com/">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="npm">
+
+    <link rel="stylesheet" media="all" href="/static/css/index.c929724b.css">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+  
+    <script src="/static/js/index.min.473b6d2f.js"></script>
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebSite" data-crumb="cS8B6w0HtPBv-T2HbV3uxSqn9VoIDrK2KeSG7bEMGAQ">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+
+  <header class="anonymous">
+    <!-- logo -->
+    <div class="header-item brand-container">
+      <div class="logo-container" id='npm-logo'>
+        <a href="/"><img src="/static/images/npm-logo.svg" alt="npm logo" /></a>
+      </div>
+    </div>
+    <!-- /logo -->
+
+
+    <!-- search -->
+    <div class="header-item header-search-container">
+      <form class="site-search" id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+        <div id="site-search-container">
+            <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" />
+        </div>
+        <input type="submit"/>
+      </form>
+    </div>
+
+    <!-- menu 1 -->
+    <div class="header-item user-info-container">
+      <div class="user-info">
+          <ul class="user-info-salutation single">
+            <li><a href="/signup">sign up</a> or <a href="/login">log in</a></li>
+            <li><a href="/login"><span class="a11y-only">log in</span><span class="icon icon-wombat-head-login"></a></li>
+          </ul>
+      </div> <!-- .user-info -->
+    </div>
+    <!-- /menu 1 -->
+
+    <!-- menu 2 -->
+    <div class="header-item header-nav-menu-container">
+      <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+      <div class="nav-menu-container" role="navigation">
+        <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+          <img alt="mobile navigation menu" src="/static/images/mobile-menu.png" />
+        </a>
+
+
+        <div class="drop-down-menu-container" role="menu">
+          <nav id="product-navigation" class="product-navigation drop-down-menu">
+            <ul class="drop-down-menu-section products-list">
+              <li><a href="/npm/on-site">npm On-Site</a></li>
+              <li><a href="/npm/private-packages" data-event-trigger="click" data-event-name="private-modules-nav-link">npm Private Packages</a></li>
+              <li><a href="/npm/open-source">npm Open Source</a></li>
+              <li><a href="https://docs.npmjs.com">documentation</a></li>
+              <li><a href="/support">support</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- /menu 2 -->
+
+
+
+  </header>
+
+
+    <div class="container content">
+      <div class="container">
+
+  <div class="centered">
+    <h1>npm is the package manager for <span id="what-npm-is-for">node.js</span></h1>
+  </div>
+
+  <div id="home-stats">
+      <div class="stat icon-package-hex">
+        <strong class="pretty-number total-packages">249027</strong>
+        total packages
+      </div>
+
+      <div class="stat icon-cal-24hours">
+        <strong class="pretty-number">52056627</strong>
+        downloads in the last day
+      </div>
+
+      <div class="stat icon-cal-7days">
+        <strong class="pretty-number">910789002</strong>
+        downloads in the last week
+      </div>
+
+      <div class="stat icon-cal-30days">
+        <strong class="pretty-number">3550508627</strong>
+        downloads in the last month
+      </div>
+  </div>
+
+</div>
+
+<h2 id="explicit" class="centered ruled">
+  <a href="#explicit">packages people 'npm install' a lot</a>
+</h2>
+<ul class="columnar">
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/browserify">
+      <img src="https://d21ii91i3y6o6h.cloudfront.net/gallery_images/from_proof/1647/small/1405586570/browserify-2-hexagon-sticker.png" alt="browserify logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/browserify">browserify</a>
+    </h3>
+
+    <p class="description">browser-side require() the node way</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/browserify">13.0.0</a>
+
+       
+        published
+        <span data-date="2016-01-09T18:36:00.872Z" data-date-format="relative">2016-01-09T18:36:00.872Z</span>
+        by
+          <a href="/~feross">feross</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/grunt-cli">
+      <img src="https://i.cloudup.com/bDkmXyEmr5.png" alt="grunt-cli logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/grunt-cli">grunt-cli</a>
+    </h3>
+
+    <p class="description">The grunt command line interface.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/grunt-cli">0.1.13</a>
+
+       
+        published
+        <span data-date="2014-01-24T14:30:10.422Z" data-date-format="relative">2014-01-24T14:30:10.422Z</span>
+        by
+          <a href="/~tkellen">tkellen</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/bower">
+      <img src="https://i.cloudup.com/Ka0R3QvWRs.png" alt="bower logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/bower">bower</a>
+    </h3>
+
+    <p class="description">The browser package manager</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/bower">1.7.7</a>
+
+       
+        published
+        <span data-date="2016-01-27T17:23:48.077Z" data-date-format="relative">2016-01-27T17:23:48.077Z</span>
+        by
+          <a href="/~sheerun">sheerun</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/gulp">
+      <img src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" alt="gulp logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/gulp">gulp</a>
+    </h3>
+
+    <p class="description">The streaming build system</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/gulp">3.9.0</a>
+
+       
+        published
+        <span data-date="2015-06-01T21:50:47.221Z" data-date-format="relative">2015-06-01T21:50:47.221Z</span>
+        by
+          <a href="/~phated">phated</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/grunt">
+      <img src="https://i.cloudup.com/bDkmXyEmr5.png" alt="grunt logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/grunt">grunt</a>
+    </h3>
+
+    <p class="description">The JavaScript Task Runner</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/grunt">0.4.5</a>
+
+       
+        published
+        <span data-date="2014-05-12T17:45:09.046Z" data-date-format="relative">2014-05-12T17:45:09.046Z</span>
+        by
+          <a href="/~cowboy">cowboy</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/express">
+      <img src="https://cldup.com/wpGXm1cWwB.png" alt="express logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/express">express</a>
+    </h3>
+
+    <p class="description">Fast, unopinionated, minimalist web framework</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/express">4.13.4</a>
+
+       
+        published
+        <span data-date="2016-01-22T02:15:21.453Z" data-date-format="relative">2016-01-22T02:15:21.453Z</span>
+        by
+          <a href="/~dougwilson">dougwilson</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/npm">
+      <img src="https://cldup.com/Rg6WLgqccB.svg" alt="npm logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/npm">npm</a>
+    </h3>
+
+    <p class="description">a package manager for JavaScript</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/npm">3.7.1</a>
+
+       
+        published
+        <span data-date="2016-02-01T23:33:52.051Z" data-date-format="relative">2016-02-01T23:33:52.051Z</span>
+        by
+          <a href="/~iarna">iarna</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/cordova">
+      <img src="https://cldup.com/q5Jmvu10tV.png" alt="cordova logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/cordova">cordova</a>
+    </h3>
+
+    <p class="description">Cordova command line interface tool</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/cordova">6.0.0</a>
+
+       
+        published
+        <span data-date="2016-01-28T17:12:49.285Z" data-date-format="relative">2016-01-28T17:12:49.285Z</span>
+        by
+          <a href="/~stevegill">stevegill</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/forever">
+      <img src="https://cldup.com/iSilAlBYLW.svg" alt="forever logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/forever">forever</a>
+    </h3>
+
+    <p class="description">A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/forever">0.15.1</a>
+
+       
+        published
+        <span data-date="2015-07-31T05:50:53.540Z" data-date-format="relative">2015-07-31T05:50:53.540Z</span>
+        by
+          <a href="/~indexzero">indexzero</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/less">
+      <img src="https://i.cloudup.com/LYSQDzsBKK.png" alt="less logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/less">less</a>
+    </h3>
+
+    <p class="description">Leaner CSS</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/less">2.6.0</a>
+
+       
+        published
+        <span data-date="2016-01-29T21:06:12.560Z" data-date-format="relative">2016-01-29T21:06:12.560Z</span>
+        by
+          <a href="/~matthew-dean">matthew-dean</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/pm2">
+      <img src="https://cldup.com/PKpktytKH9.png" alt="pm2 logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/pm2">pm2</a>
+    </h3>
+
+    <p class="description">Production process manager for Node.JS applications with a built-in load balancer.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/pm2">1.0.0</a>
+
+       
+        published
+        <span data-date="2016-01-04T12:46:44.304Z" data-date-format="relative">2016-01-04T12:46:44.304Z</span>
+        by
+          <a href="/~tknew">tknew</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/karma">
+      <img src="https://cldup.com/0286W-2y27.png" alt="karma logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/karma">karma</a>
+    </h3>
+
+    <p class="description">Spectacular Test Runner for JavaScript.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/karma">0.13.19</a>
+
+       
+        published
+        <span data-date="2016-01-06T00:54:29.196Z" data-date-format="relative">2016-01-06T00:54:29.196Z</span>
+        by
+          <a href="/~dignifiedquire">dignifiedquire</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/coffee-script">
+      <img src="https://cldup.com/kyDqUBuW3k.png" alt="coffee-script logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/coffee-script">coffee-script</a>
+    </h3>
+
+    <p class="description">Unfancy JavaScript</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/coffee-script">1.10.0</a>
+
+       
+        published
+        <span data-date="2015-09-03T19:47:34.946Z" data-date-format="relative">2015-09-03T19:47:34.946Z</span>
+        by
+          <a href="/~jashkenas">jashkenas</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/statsd">
+      <img src="https://cldup.com/3s3hGntQAy.svg" alt="statsd logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/statsd">statsd</a>
+    </h3>
+
+    <p class="description">A simple, lightweight network daemon to collect metrics over UDP</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/statsd">0.7.2</a>
+
+       
+        published
+        <span data-date="2014-09-11T20:03:35.253Z" data-date-format="relative">2014-09-11T20:03:35.253Z</span>
+        by
+          <a href="/~pkhzzrd">pkhzzrd</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget package-widget-with-logo">
+
+    <a class="package-logo" href="/package/yo">
+      <img src="https://cldup.com/P3MQgWdDyG.png" alt="yo logo">
+    </a>
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/yo">yo</a>
+    </h3>
+
+    <p class="description">CLI tool for running Yeoman generators</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/yo">1.6.0</a>
+
+       
+        published
+        <span data-date="2016-01-08T07:41:43.598Z" data-date-format="relative">2016-01-08T07:41:43.598Z</span>
+        by
+          <a href="/~sboudrias">sboudrias</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+</ul>
+
+<h2 id="getting-started" class="centered ruled">
+  <a href="#getting-started">getting started</a>
+</h2>
+
+<ul class="columnar">
+
+  <li>
+    <h3><a href="https://nodejs.org/en/download/">installing npm</a></h3>
+    <p>
+      The npm command-line tool is bundled with <a href="https://nodejs.org/">Node.js</a>. If you have
+      it installed, then you already have npm too. If not, go download
+      <a href="https://nodejs.org/en/download/">Node.js</a>.
+    </p>
+  </li>
+
+  <li>
+    <h3><a href="https://docs.npmjs.com">screencasts and docs</a></h3>
+    <p>
+      We've got a <a href="https://docs.npmjs.com/">new docs site</a> featuring videos and tutorials to help
+      you make your javascript dreams come true. Head on over to
+      <a href="https://docs.npmjs.com/">docs.npmjs.com</a>
+    </p>
+  </li>
+
+    <li>
+      <h3><a href="/whoshiring">get a job</a></h3>
+      <div class="hiring-container" data-template="vanilla"></div>
+    </li>
+</ul>
+
+
+<h2 id="recent" class="centered ruled">
+  <a href="/browse/updated">recently updated packages</a>
+</h2>
+<ul class="columnar">
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/sanji-express">sanji-express</a>
+    </h3>
+
+    <p class="description">Express middleware of Sanji Framework.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/sanji-express">2.1.0</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:56:05.545Z" data-date-format="relative">2016-03-07T03:56:05.545Z</span>
+        by
+          <a href="/~imzack">imzack</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/caro">caro</a>
+    </h3>
+
+    <p class="description">The general libraries base on lodash</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/caro">0.22.5</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:55:16.056Z" data-date-format="relative">2016-03-07T03:55:16.056Z</span>
+        by
+          <a href="/~carozozo">carozozo</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/nio">nio</a>
+    </h3>
+
+    <p class="description">Your own personal development assistant in a CLI</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/nio">0.8.18</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:54:50.003Z" data-date-format="relative">2016-03-07T03:54:50.003Z</span>
+        by
+          <a href="/~nubuck">nubuck</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/pm2">pm2</a>
+    </h3>
+
+    <p class="description">Production process manager for Node.JS applications with a built-in load balancer.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/pm2">1.0.2</a>
+
+       
+        published
+        <span data-date="2016-03-05T13:56:10.082Z" data-date-format="relative">2016-03-05T13:56:10.082Z</span>
+        by
+          <a href="/~tknew">tknew</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/universal-log">universal-log</a>
+    </h3>
+
+    <p class="description">Flexible logger for Node.js and Browserify</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/universal-log">0.3.7</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:54:39.217Z" data-date-format="relative">2016-03-07T03:54:39.217Z</span>
+        by
+          <a href="/~mvila">mvila</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/heroku-release">heroku-release</a>
+    </h3>
+
+    <p class="description">Release node.js apps to heroku without using Git (so that .gitignored assets are included)</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/heroku-release">0.0.4</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:54:19.927Z" data-date-format="relative">2016-03-07T03:54:19.927Z</span>
+        by
+          <a href="/~forbeslindesay">forbeslindesay</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/generator-abacus-fullstack">generator-abacus-fullstack</a>
+    </h3>
+
+    <p class="description">Yeoman generator for creating MEAN stack applications, using MongoDB, Express, AngularJS, and Node</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/generator-abacus-fullstack">0.2.0</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:54:08.167Z" data-date-format="relative">2016-03-07T03:54:08.167Z</span>
+        by
+          <a href="/~iabacus">iabacus</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/apeman-bud-guide">apeman-bud-guide</a>
+    </h3>
+
+    <p class="description">apeman bud for guide files.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/apeman-bud-guide">1.0.12</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:53:19.923Z" data-date-format="relative">2016-03-07T03:53:19.923Z</span>
+        by
+          <a href="/~okunishinishi">okunishinishi</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/yspm">yspm</a>
+    </h3>
+
+    <p class="description">Static Package Manager</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/yspm">1.0.9</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:53:20.281Z" data-date-format="relative">2016-03-07T03:53:20.281Z</span>
+        by
+          <a href="/~463393074">463393074</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/node-installer">node-installer</a>
+    </h3>
+
+    <p class="description">node-installer</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/node-installer">0.1.1</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:52:28.733Z" data-date-format="relative">2016-03-07T03:52:28.733Z</span>
+        by
+          <a href="/~xudafeng">xudafeng</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/ryan">ryan</a>
+    </h3>
+
+    <p class="description">Context/store injection for your react components, the EASY WAY !</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/ryan">0.2.1</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:51:31.974Z" data-date-format="relative">2016-03-07T03:51:31.974Z</span>
+        by
+          <a href="/~nightwolfz">nightwolfz</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/ng-focus-if">ng-focus-if</a>
+    </h3>
+
+    <p class="description">AngularJS directive that will trigger focus on an element under specified conditions</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/ng-focus-if">1.0.5</a>
+
+       
+        published
+        <span data-date="2016-03-07T03:50:51.858Z" data-date-format="relative">2016-03-07T03:50:51.858Z</span>
+        by
+          <a href="/~hiebj">hiebj</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+</ul>
+
+<h2 id="depended" class="centered ruled">
+  <a href="/browse/depended">most depended-upon packages</a>
+</h2>
+<ul class="columnar packages">
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/lodash">lodash</a>
+    </h3>
+
+    <p class="description">Lodash modular utilities.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/lodash">4.6.1</a>
+
+       
+        published
+        <span data-date="2016-03-02T18:09:40.696Z" data-date-format="relative">2016-03-02T18:09:40.696Z</span>
+        by
+          <a href="/~jdalton">jdalton</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/async">async</a>
+    </h3>
+
+    <p class="description">Higher-order functions and common patterns for asynchronous code</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/async">1.5.2</a>
+
+       
+        published
+        <span data-date="2016-01-08T00:03:32.998Z" data-date-format="relative">2016-01-08T00:03:32.998Z</span>
+        by
+          <a href="/~aearly">aearly</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/request">request</a>
+    </h3>
+
+    <p class="description">Simplified HTTP request client.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/request">2.69.0</a>
+
+       
+        published
+        <span data-date="2016-01-27T19:00:03.126Z" data-date-format="relative">2016-01-27T19:00:03.126Z</span>
+        by
+          <a href="/~mikeal">mikeal</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/underscore">underscore</a>
+    </h3>
+
+    <p class="description">JavaScript&#x27;s functional programming helper library.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/underscore">1.8.3</a>
+
+       
+        published
+        <span data-date="2015-04-02T15:32:54.520Z" data-date-format="relative">2015-04-02T15:32:54.520Z</span>
+        by
+          <a href="/~jashkenas">jashkenas</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/express">express</a>
+    </h3>
+
+    <p class="description">Fast, unopinionated, minimalist web framework</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/express">4.13.4</a>
+
+       
+        published
+        <span data-date="2016-01-22T02:15:21.453Z" data-date-format="relative">2016-01-22T02:15:21.453Z</span>
+        by
+          <a href="/~dougwilson">dougwilson</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/commander">commander</a>
+    </h3>
+
+    <p class="description">the complete solution for node.js command-line programs</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/commander">2.9.0</a>
+
+       
+        published
+        <span data-date="2015-10-13T15:26:25.933Z" data-date-format="relative">2015-10-13T15:26:25.933Z</span>
+        by
+          <a href="/~zhiyelee">zhiyelee</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/debug">debug</a>
+    </h3>
+
+    <p class="description">small debugging utility</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/debug">2.2.0</a>
+
+       
+        published
+        <span data-date="2015-05-10T07:21:25.639Z" data-date-format="relative">2015-05-10T07:21:25.639Z</span>
+        by
+          <a href="/~tootallnate">tootallnate</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/chalk">chalk</a>
+    </h3>
+
+    <p class="description">Terminal string styling done right. Much color.</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/chalk">1.1.1</a>
+
+       
+        published
+        <span data-date="2015-08-19T20:10:58.495Z" data-date-format="relative">2015-08-19T20:10:58.495Z</span>
+        by
+          <a href="/~sindresorhus">sindresorhus</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/bluebird">bluebird</a>
+    </h3>
+
+    <p class="description">Full featured Promises/A+ implementation with exceptionally good performance</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/bluebird">3.3.3</a>
+
+       
+        published
+        <span data-date="2016-02-25T22:56:12.035Z" data-date-format="relative">2016-02-25T22:56:12.035Z</span>
+        by
+          <a href="/~esailija">esailija</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/q">q</a>
+    </h3>
+
+    <p class="description">A library for promises (CommonJS/Promises/A,B,D)</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/q">1.4.1</a>
+
+       
+        published
+        <span data-date="2015-05-17T04:25:07.299Z" data-date-format="relative">2015-05-17T04:25:07.299Z</span>
+        by
+          <a href="/~kriskowal">kriskowal</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/mkdirp">mkdirp</a>
+    </h3>
+
+    <p class="description">Recursively mkdir, like &#x60;mkdir -p&#x60;</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/mkdirp">0.5.1</a>
+
+       
+        published
+        <span data-date="2015-05-14T02:27:01.553Z" data-date-format="relative">2015-05-14T02:27:01.553Z</span>
+        by
+          <a href="/~substack">substack</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+      <li><div class="package-widget ">
+
+
+  <div class="package-details">
+    <h3>
+      <a class="name" href="/package/colors">colors</a>
+    </h3>
+
+    <p class="description">get colors in your node.js console</p>
+
+    <p class="author quiet">
+
+      
+
+      <a class="version" href="/package/colors">1.1.2</a>
+
+       
+        published
+        <span data-date="2015-06-17T13:03:00.583Z" data-date-format="relative">2015-06-17T13:03:00.583Z</span>
+        by
+          <a href="/~marak">marak</a>
+       
+
+    </p>
+
+  </div>
+
+</div>
+</li>
+</ul>
+
+<script type="application/ld+json">
+  { "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "npm, Inc.",
+    "url" : "https://www.npmjs.com",
+    "sameAs" : [ "http://twitter.com/npmjs",
+      "http://plus.google.com/117779828622760977116",
+      "https://www.youtube.com/channel/UCK71Wk0I45SLTSXQA23GdIw"],
+    "logo": "https://www.npmjs.com/static/images/npm-logo.svg"
+  }
+</script>
+
+    </div>
+
+  <footer>
+
+    <div class="container">
+
+
+        <ul class="columnar">
+          <li>
+            <h3>You Need Help</h3>
+            <ul class="links">
+              <li><a href="https://docs.npmjs.com">Documentation</a></li>
+              <li><a href="/support">Support / Contact Us</a></li>
+              <li><a href="http://status.npmjs.org/">Registry Status</a></li>
+              <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+              <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+              <li><a href="/policies/security">Security</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>About npm</h3>
+            <ul class="links">
+              <li><a href="/about">About npm, Inc</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+              <li><a href="/npm-weekly">npm Weekly</a></li>
+              <li><a href="http://blog.npmjs.org">Blog</a></li>
+              <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+              <li><a href="https://github.com/npm">GitHub</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Legal Stuff</h3>
+            <ul class="links">
+              <li><a href="/policies/terms">Terms of Use</a></li>
+              <li><a href="/policies/conduct">Code of Conduct</a></li>
+              <li><a href="/policies/disputes">Package Name Disputes</a></li>
+              <li><a href="/policies/privacy">Privacy Policy</a></li>
+              <li><a href="/policies/receiving-reports">Reporting Abuse</a></li>
+              <li><a href="/policies/">Other policies</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+    </div>
+
+    <div class="container centered">
+      <a class="npm-loves-you" href="/">
+        npm loves you
+      </a>
+    </div>
+
+  </footer>
+  
+  <script defer src="/static/js/vendor.min.a3c53b90.js"></script>
+  <script defer async src="https://cdn.optimizely.com/js/3318080746.js"></script>
+  <script defer async src='//img.en25.com/i/elqCfg.min.js'></script><!-- Eloqua -->
+</body>
+</html>
+
+<!-- pid=1365 bb6aad3db25a2c899045e368152bc0d55e9de860 https://www.npmjs.com www-14-west.internal.npmjs.com  -->
