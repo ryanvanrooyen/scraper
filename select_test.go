@@ -3,6 +3,7 @@ package scraper
 import (
 	"os"
 	"testing"
+	"log"
 )
 
 const selectTestHTML = `
@@ -41,7 +42,8 @@ func selectTest(t *testing.T, selector string, exp string) {
 
 	url := "localhost"
 	getter := MemoryGetter{url: selectTestHTML}
-	scraper := New(url, os.Stdout, getter)
+	logger := log.New(os.Stdout, "", log.Lshortfile)
+	scraper := New(url, logger, getter)
 
 	if scraper == nil {
 		t.Fatalf("New created a nil scraper")

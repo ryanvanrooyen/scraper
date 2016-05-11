@@ -1,7 +1,6 @@
 package scraper
 
-import "testing"
-import "os"
+import ("testing"; "os"; "log")
 
 const filterTestHTML = `
 	<div class="d1">
@@ -36,7 +35,8 @@ func filterTest(t *testing.T, filter string,
 
 	url := "localhost"
 	getter := MemoryGetter{url:filterTestHTML}
-	scraper := New(url, os.Stdout, getter)
+	logger := log.New(os.Stdout, "", log.Lshortfile)
+	scraper := New(url, logger, getter)
 
 	if scraper == nil {
 		t.Fatalf("New created a nil scraper")
