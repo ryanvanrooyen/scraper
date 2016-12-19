@@ -1,6 +1,9 @@
 package scraper
 
-import ("io/ioutil"; "testing")
+import (
+	"io/ioutil"
+	"testing"
+)
 
 func TestMultiUserAgent(t *testing.T) {
 
@@ -52,10 +55,10 @@ func TestFileGetter(t *testing.T) {
 	verifyGetter(t, client, url, expected)
 }
 
-func verifyGetter(t *testing.T, client Getter,
+func verifyGetter(t *testing.T, getter Getter,
 	url string, expectedData string) {
 
-	reader, _ := client.Get(url)
+	reader, _ := getter.Get(url, "")
 	data, _ := ioutil.ReadAll(reader)
 	actual := string(data)
 

@@ -1,17 +1,17 @@
 package scraper
 
-import ("testing"; "os"; "log")
+import "testing"
 
 const filterTestHTML = `
 	<div class="d1">
-		<span class="a1"><span class="b1">V1</span></span>
-		<span class="a1"><span class="b1">V2</span></span>
-		<span class="a1"><span class="b1">V3</span></span>
+		<span class="a1"><span class="b1">X1</span></span>
+		<span class="a2"><span class="b1">X2</span></span>
+		<span class="a3"><span class="b1">X3</span></span>
 	</div>
 	<div class="d2">
-		<span class="a1"><span class="b1">V1</span></span>
-		<span class="a1"><span class="b1">V2</span></span>
-		<span class="a1"><span class="b1">V3</span></span>
+		<span class="a1"><span class="b1">Y1</span></span>
+		<span class="a2"><span class="b1">Y2</span></span>
+		<span class="a3"><span class="b1">Y3</span></span>
 	</div>`
 
 type FilterTest struct {
@@ -20,12 +20,23 @@ type FilterTest struct {
 	Exp []string
 }
 
-var filterTestData = []FilterTest{
-	FilterTest{Fil: ".d1 > span", Sel: ".b1",	Exp: []string{"V1","V2","V3"}},
+var filterTests = []FilterTest{
+	FilterTest{
+		Fil: ".d1",
+		Sel: "span.b1",
+		Exp: []string{"X1", "X2", "X3"}},
+	FilterTest{
+		Fil: ".d1 > span",
+		Sel: ".b1",
+		Exp: []string{"X1", "X2", "X3"}},
+	FilterTest{
+		Fil: ".d2",
+		Sel: ".a1",
+		Exp: []string{"Y1"}},
 }
 
 func TestFilter(t *testing.T) {
-	for _, test := range filterTestData {
+	for _, test := range filterTests {
 		filterTest(t, test.Fil, test.Sel, test.Exp)
 	}
 }
@@ -34,9 +45,9 @@ func filterTest(t *testing.T, filter string,
 	selector string, expected []string) {
 
 	url := "localhost"
-	getter := MemoryGetter{url:filterTestHTML}
-	logger := log.New(os.Stdout, "", log.Lshortfile)
-	scraper := New(url, logger, getter)
+	getter := MemoryGetter{url: filterTestHTML}
+	// logger := log.New(os.Stdout, "TestFilter: ", log.LUTC)
+	scraper := New(url, nil, getter)
 
 	if scraper == nil {
 		t.Fatalf("New created a nil scraper")

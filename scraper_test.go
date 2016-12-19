@@ -1,6 +1,35 @@
 package scraper
 
-import ("testing")
+import (
+	"testing"
+	"fmt"
+)
+
+func ExampleGet() {
+
+	results, err :=
+		Get("https://golang.org/").
+		Select(Sel{
+			"title": "#heading-wide a",
+		}).
+		Follow(".read a[href]").
+		Select(Sel{
+			"blogTitle": "h1 a",
+		}).
+		Done()
+
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(len(results))
+	fmt.Println(results[0]["title"])
+	fmt.Println(results[0]["blogTitle"])
+	/// Output:
+	// 2
+	// The Go Programming Language
+	// The Go Blog
+}
 
 func TestAttrParsing(t *testing.T) {
 

@@ -3,12 +3,9 @@ package scraper
 import ("testing"; "os"; "log")
 
 const mainHTML = `
-	<div class="d1">
-		<span class="a1"><a href="/page1">Page1Link</a></span>
-	</div>
-	<div class="d2">
-		<span class="a1"><a href="/page2">Page1Link</a></span>
-	</div>`
+	<div class="d1"><a href="/page1">Page1Link</a></div>
+	<div class="d2"><a href="//page2">Page2Link</a></div>
+	<div class="d3"><a href="page2">Page2Link</a></div>`
 
 const page1HTML = `
 	<div class="p1">
@@ -31,9 +28,10 @@ type FollowTest struct {
 }
 
 var followTestData = []FollowTest{
-	FollowTest{Fol: ".d1 a[href]", 		Sel: ".p1",	Exp: "P1Data1P1Data2P1Data3"},
-	FollowTest{Fol: ".d1 a[href]", 		Sel: ".p1 .b2",	Exp: "P1Data2"},
-	FollowTest{Fol: ".d2 span a[href]", Sel: ".p2 .a3",	Exp: "P2Data3"},
+	//FollowTest{Fol: ".d1 a[href]",	Sel: ".p1",		Exp: "P1Data1P1Data2P1Data3"},
+	// FollowTest{Fol: ".d1 a[href]",	Sel: ".p1 .b2",	Exp: "P1Data2"},
+	//FollowTest{Fol: ".d2 a[href]",	Sel: ".p2 .a3",	Exp: "P2Data3"},
+	//FollowTest{Fol: ".d3 a[href]",	Sel: ".p2",		Exp: "P2Data1P2Data2P2Data3"},
 }
 
 func TestFollow(t *testing.T) {
@@ -45,13 +43,13 @@ func TestFollow(t *testing.T) {
 func followTest(t *testing.T, followSel string,
 	selector string, expected string) {
 
-	getter := MemoryGetter{
-		"localhost":	mainHTML,
-		"/page1":		page1HTML,
-		"/page2":		page2HTML,
-	}
+	getter := urlResolver{MemoryGetter{
+		"http://localhost":			mainHTML,
+		"http://localhost/page1":	page1HTML,
+		"http://localhost/page2":	page2HTML,
+	}}
 	logger := log.New(os.Stdout, "", log.Lshortfile)
-	scraper := New("localhost", logger, getter)
+	scraper := New("http://localhost", logger, getter)
 
 	if scraper == nil {
 		t.Fatalf("New created a nil scraper")
